@@ -10,3 +10,33 @@ Once the x402 wallet is running, you can call any paid api endpoint (such as /se
 
 [Insert demo video here]
 
+## Project Setup
+
+This project consits for three parts:
+
+1. Api Server
+
+This is a sample express server that demonstrates how to to monetize an express api endpoint. See [seller/api-server/README.md](seller/api-server/README.md) for more details.
+
+Using `requiresSolanaPayment` middleware, you can monetize any api existing api
+
+```typescript
+app.get(
+  "/weather",
+  (req, res) => {
+    res.send({ message: "The weather is sunny" });
+  }
+);
+```
+
+like this: 
+
+```typescript
+app.get(
+  "/weather",
+  requiresSolanaPayment("$0.001", "Access to weather data", "solana-devnet"),
+  (req, res) => {
+    res.send({ message: "The weather is sunny" });
+  }
+);
+```

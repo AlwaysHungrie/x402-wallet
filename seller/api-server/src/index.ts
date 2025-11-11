@@ -29,7 +29,6 @@ app.get(
 
 app.get(
   "/weather",
-  requiresPayment("$0.001", "Access to weather data", "base-sepolia"),
   (req, res) => {
     res.send({ message: "The weather is sunny" });
   }
