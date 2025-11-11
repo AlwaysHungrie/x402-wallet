@@ -19,3 +19,5 @@ npm run make
 1. Creating wallet
 2. Adding API config
 3. Adding MCP server to the desktop client
+
+Usage details can be found in the [DEMO VIDEO](https://x.com/Always_Hungrie_/status/1988385764623953935)

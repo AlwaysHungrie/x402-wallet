@@ -10,7 +10,7 @@ import { FuseV1Options, FuseVersion } from '@electron/fuses';
 
 const config: ForgeConfig = {
   packagerConfig: {
-    icon: '/Users/always_hungrie/psyduck/x402-test/buyer/electron-mcp-wallet/assets/logo',
+    icon: '/Users/always_hungrie/projects/x402-wallet/buyer/electron-mcp-wallet/assets/logo',
     asar: true,
   },
   rebuildConfig: {
@@ -25,7 +25,7 @@ const config: ForgeConfig = {
       name: '@electron-forge/maker-dmg',
       config: {
         format: 'ULFO',
-        icon: '/Users/always_hungrie/psyduck/x402-test/buyer/electron-mcp-wallet/assets/logo.icns'
+        icon: '/Users/always_hungrie/projects/x402-wallet/buyer/electron-mcp-wallet/assets/logo.icns'
       }
     }
   ],

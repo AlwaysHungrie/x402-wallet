@@ -1,14 +1,14 @@
 # x402 Wallet
 
+[DEMO VIDEO](https://x.com/Always_Hungrie_/status/1988385764623953935)
+
 x402 Wallet allows existing desktop AI clients such as Claude Desktop, Cursor, etc. to access x402-enabled API and paid MCP servers natively.
 
 x402 Wallet is an electron app that needs to be running while using your desktop client. It consists of a 
  - Solana wallet which needs to be setup and funded with SOL and USDC. 
  - MCP server that needs to be configured in the desktop client.
 
-Once the x402 wallet is running, you can call any paid api endpoint (such as /seller/api-server) or access paid tools of existing MCP servers (such as /seller/mcp-server) from within the desktop client.
-
-[Insert demo video here]
+Once the x402 wallet is running, you can call any paid api endpoint (such as [seller/api-server](seller/api-server)) or access paid tools of existing MCP servers (such as [seller/mcp-server](seller/mcp-server)) from within the desktop client.
 
 ## Project Setup
 
@@ -93,3 +93,5 @@ await registerPaidSolanaTool(
 This is an electron app that creates a solana wallet and an MCP server that exposes a tool that allows the agent call any paid api endpoint (such as /seller/api-server) or access paid tools of existing MCP servers (such as /seller/mcp-server) from within the desktop client.
 
 See [buyer/electron-mcp-wallet/README.md](buyer/electron-mcp-wallet/README.md) for more details.
+
+Exact usage details can be found in the [DEMO VIDEO](https://x.com/Always_Hungrie_/status/1988385764623953935)
